@@ -1,0 +1,6 @@
+services:
+  - type: cron
+    name: keepalive-cron
+    env: docker
+    schedule: "*/10 * * * *"
+    dockerCommand: ./keepalive.sh
